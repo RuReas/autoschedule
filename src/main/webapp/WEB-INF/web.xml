@@ -15,4 +15,13 @@
         <url-pattern>/users</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <servlet-class>net.usachev.autoschedule.web.ScheduleServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <url-pattern>/schedule</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -18,4 +18,9 @@ public class Transport extends NamedEntity {
     public List<Departure> getDepartures() {
         return departures;
     }
+
+    public Transport(Integer id, String name, String model) {
+        super(id, name);
+        this.model = model;
+    }
 }
