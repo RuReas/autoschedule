@@ -1,12 +1,12 @@
-package net.usachev.autoschedule.model;
+package net.usachev.autoschedule.domain;
 
 public class BaseEntity {
     protected Integer id;
 
-    public BaseEntity() {
+    BaseEntity() {
     }
 
-    protected BaseEntity(Integer id) {
+    BaseEntity(Integer id) {
         this.id = id;
     }
 
@@ -19,6 +19,6 @@ public class BaseEntity {
     }
 
     public boolean isNew() {
-        return (this.id == null);
+        return (getId() == null);
     }
 }

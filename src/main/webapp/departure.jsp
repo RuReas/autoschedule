@@ -10,7 +10,7 @@
     <h2><a href="index.html">Home</a></h2>
     <h3>${param.action == 'create' ? 'Create departure' : 'Edit departure'}</h3>
     <hr>
-    <jsp:useBean id="departure" type="net.usachev.autoschedule.model.Departure" scope="request"/>
+    <jsp:useBean id="departure" type="net.usachev.autoschedule.domain.Departure" scope="request"/>
     <form method="post" action="schedule">
         <input type="hidden" name="id" value="${departure.id}">
         <dl>

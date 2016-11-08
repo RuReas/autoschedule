@@ -1,6 +1,6 @@
 package net.usachev.autoschedule.repository;
 
-import net.usachev.autoschedule.model.User;
+import net.usachev.autoschedule.domain.User;
 
 import java.util.List;
 

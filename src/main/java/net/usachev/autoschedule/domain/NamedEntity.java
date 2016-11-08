@@ -1,12 +1,12 @@
-package net.usachev.autoschedule.model;
+package net.usachev.autoschedule.domain;
 
-public class NamedEntity extends BaseEntity {
-    protected String name;
+class NamedEntity extends BaseEntity {
+    String name;
 
-    public NamedEntity() {
+    NamedEntity() {
     }
 
-    protected NamedEntity(Integer id, String name) {
+    NamedEntity(Integer id, String name) {
         super(id);
         this.name = name;
     }

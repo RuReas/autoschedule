@@ -1,6 +1,6 @@
 package net.usachev.autoschedule.web;
 
-import net.usachev.autoschedule.model.Departure;
+import net.usachev.autoschedule.domain.Departure;
 import net.usachev.autoschedule.repository.DepartureRepository;
 import net.usachev.autoschedule.repository.InMemoryDepartureRepositoryImpl;
 import org.slf4j.Logger;

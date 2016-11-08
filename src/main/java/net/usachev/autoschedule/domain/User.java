@@ -1,4 +1,4 @@
-package net.usachev.autoschedule.model;
+package net.usachev.autoschedule.domain;
 
 import java.util.Date;
 import java.util.EnumSet;

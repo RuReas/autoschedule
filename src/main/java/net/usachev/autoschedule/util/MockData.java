@@ -1,8 +1,8 @@
 package net.usachev.autoschedule.util;
 
-import net.usachev.autoschedule.model.Departure;
-import net.usachev.autoschedule.model.Transport;
-import net.usachev.autoschedule.model.User;
+import net.usachev.autoschedule.domain.Departure;
+import net.usachev.autoschedule.domain.Transport;
+import net.usachev.autoschedule.domain.User;
 
 import java.time.LocalDateTime;
 import java.time.Month;

@@ -22,7 +22,7 @@
         </tr>
         </thead>
         <c:forEach items="${schedule}" var="departure">
-            <jsp:useBean id="departure" scope="page" type="net.usachev.autoschedule.model.Departure"/>
+            <jsp:useBean id="departure" scope="page" type="net.usachev.autoschedule.domain.Departure"/>
             <tr>
                 <td>${departure.description}</td>
                 <td> ${departure.start} </td>
