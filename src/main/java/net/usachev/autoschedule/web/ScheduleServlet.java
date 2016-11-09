@@ -2,7 +2,7 @@ package net.usachev.autoschedule.web;
 
 import net.usachev.autoschedule.domain.Departure;
 import net.usachev.autoschedule.repository.DepartureRepository;
-import net.usachev.autoschedule.repository.InMemoryDepartureRepositoryImpl;
+import net.usachev.autoschedule.repository.mock.InMemoryDepartureRepositoryImpl;
 import org.slf4j.Logger;
 
 import javax.servlet.ServletConfig;

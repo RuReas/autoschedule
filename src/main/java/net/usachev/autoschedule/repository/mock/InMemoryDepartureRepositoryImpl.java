@@ -1,6 +1,7 @@
-package net.usachev.autoschedule.repository;
+package net.usachev.autoschedule.repository.mock;
 
 import net.usachev.autoschedule.domain.Departure;
+import net.usachev.autoschedule.repository.DepartureRepository;
 import net.usachev.autoschedule.util.MockData;
 
 import java.util.Collection;
