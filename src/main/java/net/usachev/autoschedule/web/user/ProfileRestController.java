@@ -2,7 +2,9 @@ package net.usachev.autoschedule.web.user;
 
 import net.usachev.autoschedule.AuthorizedUser;
 import net.usachev.autoschedule.domain.User;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ProfileRestController extends AbstractUserController {
 
     public User get() {

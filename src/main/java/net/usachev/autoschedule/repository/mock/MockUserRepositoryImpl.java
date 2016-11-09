@@ -3,13 +3,16 @@ package net.usachev.autoschedule.repository.mock;
 import net.usachev.autoschedule.domain.User;
 import net.usachev.autoschedule.repository.UserRepository;
 import org.slf4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collections;
 import java.util.List;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
+@Repository
 public class MockUserRepositoryImpl implements UserRepository {
+
     private static final Logger LOG = getLogger(MockUserRepositoryImpl.class);
 
     @Override

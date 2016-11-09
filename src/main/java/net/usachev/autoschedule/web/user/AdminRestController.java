@@ -1,9 +1,11 @@
 package net.usachev.autoschedule.web.user;
 
 import net.usachev.autoschedule.domain.User;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
+@Controller
 public class AdminRestController extends AbstractUserController {
 
     public List<User> getAll() {

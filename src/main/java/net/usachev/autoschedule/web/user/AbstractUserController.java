@@ -3,6 +3,7 @@ package net.usachev.autoschedule.web.user;
 import net.usachev.autoschedule.domain.User;
 import net.usachev.autoschedule.service.UserService;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ abstract class AbstractUserController {
 
     private static final Logger LOG = getLogger(AbstractUserController.class);
 
+    @Autowired
     private UserService service;
 
     public List<User> getAll() {
