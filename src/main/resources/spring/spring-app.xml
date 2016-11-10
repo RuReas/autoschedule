@@ -11,6 +11,6 @@
 
     <context:component-scan base-package="net.usachev.**.service"/>
 
-    <context:component-scan base-package="net.usachev.**.web"/>
+    <context:component-scan base-package="net.usachev.**.controller"/>
 
 </beans>

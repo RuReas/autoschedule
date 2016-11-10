@@ -2,6 +2,7 @@ package net.usachev.autoschedule.service;
 
 import net.usachev.autoschedule.domain.User;
 import net.usachev.autoschedule.repository.UserRepository;
+import net.usachev.autoschedule.util.exception.ExceptionUtil;
 import net.usachev.autoschedule.util.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,31 +17,31 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User save(User user) {
-        return null;
+        return repository.save(user);
     }
 
     @Override
-    public void delete(int id) throws NotFoundException {
-
+    public void delete(int id) {
+        ExceptionUtil.checkNotFoundWithId(repository.delete(id), id);
     }
 
     @Override
     public User get(int id) throws NotFoundException {
-        return null;
+        return ExceptionUtil.checkNotFoundWithId(repository.get(id), id);
     }
 
     @Override
     public User getByEmail(String email) throws NotFoundException {
-        return null;
+        return ExceptionUtil.checkNotFound(repository.getByEmail(email), "email=" + email);
     }
 
     @Override
     public List<User> getAll() {
-        return null;
+        return repository.getAll();
     }
 
     @Override
     public void update(User user) {
-
+        repository.save(user);
     }
 }

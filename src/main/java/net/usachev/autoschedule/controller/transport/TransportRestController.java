@@ -1,4 +1,4 @@
-package net.usachev.autoschedule.web.transport;
+package net.usachev.autoschedule.controller.transport;
 
 import net.usachev.autoschedule.service.TransportService;
 import org.springframework.beans.factory.annotation.Autowired;

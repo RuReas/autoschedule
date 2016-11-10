@@ -1,6 +1,6 @@
 package net.usachev.autoschedule.domain;
 
-class NamedEntity extends BaseEntity {
+public class NamedEntity extends BaseEntity {
     String name;
 
     NamedEntity() {

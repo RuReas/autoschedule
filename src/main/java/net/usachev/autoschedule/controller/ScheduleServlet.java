@@ -1,8 +1,7 @@
-package net.usachev.autoschedule.web;
+package net.usachev.autoschedule.controller;
 
 import net.usachev.autoschedule.domain.Departure;
 import net.usachev.autoschedule.repository.DepartureRepository;
-import net.usachev.autoschedule.repository.mock.InMemoryDepartureRepositoryImpl;
 import org.slf4j.Logger;
 
 import javax.servlet.ServletConfig;
@@ -17,14 +16,15 @@ import java.util.Objects;
 import static org.slf4j.LoggerFactory.getLogger;
 
 public class ScheduleServlet extends HttpServlet {
+
     private static final Logger LOG = getLogger(ScheduleServlet.class);
 
     private DepartureRepository repository;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        super.init(config);
-        repository = new InMemoryDepartureRepositoryImpl();
+//        super.init(config);
+//        repository = new InMemoryDepartureRepositoryImpl();
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

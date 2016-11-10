@@ -1,6 +1,6 @@
 package net.usachev.autoschedule.domain;
 
-enum  Role {
+public enum  Role {
     ROLE_USER,
     ROLE_ADMIN
 }

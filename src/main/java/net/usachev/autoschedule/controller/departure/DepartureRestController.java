@@ -1,4 +1,4 @@
-package net.usachev.autoschedule.web.departure;
+package net.usachev.autoschedule.controller.departure;
 
 import net.usachev.autoschedule.service.DepartureService;
 import org.springframework.beans.factory.annotation.Autowired;

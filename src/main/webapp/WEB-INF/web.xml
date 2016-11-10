@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>userServlet</servlet-name>
-        <servlet-class>net.usachev.autoschedule.web.UserServlet</servlet-class>
+        <servlet-class>net.usachev.autoschedule.controller.UserServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>
@@ -17,7 +17,7 @@
 
     <servlet>
         <servlet-name>ScheduleServlet</servlet-name>
-        <servlet-class>net.usachev.autoschedule.web.ScheduleServlet</servlet-class>
+        <servlet-class>net.usachev.autoschedule.controller.ScheduleServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>

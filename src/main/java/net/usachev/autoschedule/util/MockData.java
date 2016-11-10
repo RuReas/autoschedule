@@ -2,18 +2,13 @@ package net.usachev.autoschedule.util;
 
 import net.usachev.autoschedule.domain.Departure;
 import net.usachev.autoschedule.domain.Transport;
-import net.usachev.autoschedule.domain.User;
 
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class MockData {
-    public static final User ADMIN = new User(100001, "Admin", "admin@email.com", "12345678", true, Collections.emptySet());
-    public static final User USER01 = new User(100002, "User01", "user01@email.com", "12345678", true, Collections.emptySet());
-    public static final User USER02 = new User(100003, "User02", "user02@email.com", "12345678", true, Collections.emptySet());
 
     public static final Transport TRANSPORT01 = new Transport(100004, "Transport01", "model01");
     public static final Transport TRANSPORT02 = new Transport(100005, "Transport02", "model02");

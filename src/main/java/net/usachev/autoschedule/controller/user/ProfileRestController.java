@@ -1,4 +1,4 @@
-package net.usachev.autoschedule.web.user;
+package net.usachev.autoschedule.controller.user;
 
 import net.usachev.autoschedule.AuthorizedUser;
 import net.usachev.autoschedule.domain.User;
